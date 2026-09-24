@@ -1,0 +1,13 @@
+@EndUserText.label: 'Service Definition for Processor'
+define service ZATS_UM_SD_V2_PROCESSOR {
+  expose ZATS_UM_TRAVEL_PROCESSOR    as Travel;
+  expose ZATS_UM_BOOKING_PROCESSOR   as Booking;
+  expose ZSVU_ATTACHMENT_PROCESSOR   as Attachment;
+  expose ZATS_UM_BOOKSUPPL_PROCESSOR as BookSupplement;
+  expose /DMO/I_Agency               as Agency;
+  expose /DMO/I_Customer             as Customer;
+  expose /DMO/I_Carrier              as Carrier;
+  expose /DMO/I_Connection           as Connection;
+  expose /DMO/I_Overall_Status_VH    as OverallStatus;
+  expose /DMO/I_Booking_Status_VH    as BookingStatus;
+}

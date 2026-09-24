@@ -1,0 +1,9 @@
+@EndUserText.label: 'Service definition for unmanged travel'
+define service ZSVU_SD_UNMANAGED_TRAVEL {
+  expose ZSVU_U_Travel           as Travel;
+  expose ZSVU_U_AGENCY           as Agency;
+  expose ZSVU_U_customer         as Customer;
+  expose /DMO/I_Travel_Status_VH as Status;
+  expose I_Country               as Country;
+  expose I_Currency              as Currency;
+}
